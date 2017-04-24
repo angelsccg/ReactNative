@@ -1,22 +1,22 @@
-Ä£¿é
-ÒıÓÃ
+æ¨¡å—
+å¼•ç”¨
 
-ÔÚES5Àï£¬Èç¹ûÊ¹ÓÃCommonJS±ê×¼£¬ÒıÈëReact°ü»ù±¾Í¨¹ırequire½øĞĞ£¬´úÂëÀàËÆÕâÑù£º
+åœ¨ES5é‡Œï¼Œå¦‚æœä½¿ç”¨CommonJSæ ‡å‡†ï¼Œå¼•å…¥ReactåŒ…åŸºæœ¬é€šè¿‡requireè¿›è¡Œï¼Œä»£ç ç±»ä¼¼è¿™æ ·ï¼š
 
 //ES5
 var React = require("react");
 var {
     Component,
     PropTypes
-} = React;  //ÒıÓÃReact³éÏó×é¼ş
+} = React;  //å¼•ç”¨ReactæŠ½è±¡ç»„ä»¶
 
 var ReactNative = require("react-native");
 var {
     Image,
     Text,
-} = ReactNative;  //ÒıÓÃ¾ßÌåµÄReact Native×é¼ş
+} = ReactNative;  //å¼•ç”¨å…·ä½“çš„React Nativeç»„ä»¶
 
-ÔÚES6Àï£¬importĞ´·¨¸üÎª±ê×¼
+åœ¨ES6é‡Œï¼Œimportå†™æ³•æ›´ä¸ºæ ‡å‡†
 
 //ES6
 import React, { 
@@ -28,9 +28,9 @@ import {
     Text
 } from 'react-native'
 
-µ¼³öµ¥¸öÀà
+å¯¼å‡ºå•ä¸ªç±»
 
-ÔÚES5Àï£¬Òªµ¼³öÒ»¸öÀà¸ø±ğµÄÄ£¿éÓÃ£¬Ò»°ãÍ¨¹ımodule.exportsÀ´µ¼³ö
+åœ¨ES5é‡Œï¼Œè¦å¯¼å‡ºä¸€ä¸ªç±»ç»™åˆ«çš„æ¨¡å—ç”¨ï¼Œä¸€èˆ¬é€šè¿‡module.exportsæ¥å¯¼å‡º
 
 //ES5
 var MyComponent = React.createClass({
@@ -38,14 +38,14 @@ var MyComponent = React.createClass({
 });
 module.exports = MyComponent;
 
-ÔÚES6Àï£¬Í¨³£ÓÃexport defaultÀ´ÊµÏÖÏàÍ¬µÄ¹¦ÄÜ£º
+åœ¨ES6é‡Œï¼Œé€šå¸¸ç”¨export defaultæ¥å®ç°ç›¸åŒçš„åŠŸèƒ½ï¼š
 
 //ES6
 export default class MyComponent extends Component{
     ...
 }
 
-ÒıÓÃµÄÊ±ºòÒ²ÀàËÆ£º
+å¼•ç”¨çš„æ—¶å€™ä¹Ÿç±»ä¼¼ï¼š
 
 //ES5
 var MyComponent = require('./MyComponent');
@@ -53,10 +53,10 @@ var MyComponent = require('./MyComponent');
 //ES6
 import MyComponent from './MyComponent';
 
-×¢Òâµ¼ÈëºÍµ¼³öµÄĞ´·¨±ØĞëÅäÌ×£¬²»ÄÜ»ìÓÃ£¡
-¶¨Òå×é¼ş
+æ³¨æ„å¯¼å…¥å’Œå¯¼å‡ºçš„å†™æ³•å¿…é¡»é…å¥—ï¼Œä¸èƒ½æ··ç”¨ï¼
+å®šä¹‰ç»„ä»¶
 
-ÔÚES5Àï£¬Í¨³£Í¨¹ıReact.createClassÀ´¶¨ÒåÒ»¸ö×é¼şÀà£¬ÏñÕâÑù£º
+åœ¨ES5é‡Œï¼Œé€šå¸¸é€šè¿‡React.createClassæ¥å®šä¹‰ä¸€ä¸ªç»„ä»¶ç±»ï¼Œåƒè¿™æ ·ï¼š
 
 //ES5
 var Photo = React.createClass({
@@ -67,7 +67,7 @@ var Photo = React.createClass({
     },
 });
 
-ÔÚES6Àï£¬ÎÒÃÇÍ¨¹ı¶¨ÒåÒ»¸ö¼Ì³Ğ×ÔReact.ComponentµÄclassÀ´¶¨ÒåÒ»¸ö×é¼şÀà£¬ÏñÕâÑù£º
+åœ¨ES6é‡Œï¼Œæˆ‘ä»¬é€šè¿‡å®šä¹‰ä¸€ä¸ªç»§æ‰¿è‡ªReact.Componentçš„classæ¥å®šä¹‰ä¸€ä¸ªç»„ä»¶ç±»ï¼Œåƒè¿™æ ·ï¼š
 
 //ES6
 class Photo extends React.Component {
@@ -78,9 +78,9 @@ class Photo extends React.Component {
     }
 }
 
-¸ø×é¼ş¶¨Òå·½·¨
+ç»™ç»„ä»¶å®šä¹‰æ–¹æ³•
 
-´ÓÉÏÃæµÄÀı×ÓÀï¿ÉÒÔ¿´µ½£¬¸ø×é¼ş¶¨Òå·½·¨²»ÔÙÓÃ Ãû×Ö: function()µÄĞ´·¨£¬¶øÊÇÖ±½ÓÓÃÃû×Ö()£¬ÔÚ·½·¨µÄ×îºóÒ²²»ÄÜÓĞ¶ººÅÁË¡£
+ä»ä¸Šé¢çš„ä¾‹å­é‡Œå¯ä»¥çœ‹åˆ°ï¼Œç»™ç»„ä»¶å®šä¹‰æ–¹æ³•ä¸å†ç”¨ åå­—: function()çš„å†™æ³•ï¼Œè€Œæ˜¯ç›´æ¥ç”¨åå­—()ï¼Œåœ¨æ–¹æ³•çš„æœ€åä¹Ÿä¸èƒ½æœ‰é€—å·äº†ã€‚
 
 //ES5 
 var Photo = React.createClass({
@@ -106,9 +106,9 @@ class Photo extends React.Component {
     }
 }
 
-¶¨Òå×é¼şµÄÊôĞÔÀàĞÍºÍÄ¬ÈÏÊôĞÔ
+å®šä¹‰ç»„ä»¶çš„å±æ€§ç±»å‹å’Œé»˜è®¤å±æ€§
 
-ÔÚES5Àï£¬ÊôĞÔÀàĞÍºÍÄ¬ÈÏÊôĞÔ·Ö±ğÍ¨¹ıpropTypes³ÉÔ±ºÍgetDefaultProps·½·¨À´ÊµÏÖ
+åœ¨ES5é‡Œï¼Œå±æ€§ç±»å‹å’Œé»˜è®¤å±æ€§åˆ†åˆ«é€šè¿‡propTypesæˆå‘˜å’ŒgetDefaultPropsæ–¹æ³•æ¥å®ç°
 
 //ES5 
 var Video = React.createClass({
@@ -131,28 +131,28 @@ var Video = React.createClass({
     },
 });
 
-ÔÚES6Àï£¬¿ÉÒÔÍ³Ò»Ê¹ÓÃstatic³ÉÔ±À´ÊµÏÖ
+åœ¨ES6é‡Œï¼Œå¯ä»¥ç»Ÿä¸€ä½¿ç”¨staticæˆå‘˜æ¥å®ç°
 
 //ES6
 class Video extends React.Component {
     static defaultProps = {
         autoPlay: false,
         maxLoops: 10,
-    };  // ×¢ÒâÕâÀïÓĞ·ÖºÅ
+    };  // æ³¨æ„è¿™é‡Œæœ‰åˆ†å·
     static propTypes = {
         autoPlay: React.PropTypes.bool.isRequired,
         maxLoops: React.PropTypes.number.isRequired,
         posterFrameSrc: React.PropTypes.string.isRequired,
         videoSrc: React.PropTypes.string.isRequired,
-    };  // ×¢ÒâÕâÀïÓĞ·ÖºÅ
+    };  // æ³¨æ„è¿™é‡Œæœ‰åˆ†å·
     render() {
         return (
             <View />
         );
-    } // ×¢ÒâÕâÀï¼ÈÃ»ÓĞ·ÖºÅÒ²Ã»ÓĞ¶ººÅ
+    } // æ³¨æ„è¿™é‡Œæ—¢æ²¡æœ‰åˆ†å·ä¹Ÿæ²¡æœ‰é€—å·
 }
 
-Ò²ÓĞÈËÕâÃ´Ğ´£¬ËäÈ»²»ÍÆ¼ö£¬µ«¶Áµ½´úÂëµÄÊ±ºòÄãÓ¦µ±ÄÜÃ÷°×ËüµÄÒâË¼£º
+ä¹Ÿæœ‰äººè¿™ä¹ˆå†™ï¼Œè™½ç„¶ä¸æ¨èï¼Œä½†è¯»åˆ°ä»£ç çš„æ—¶å€™ä½ åº”å½“èƒ½æ˜ç™½å®ƒçš„æ„æ€ï¼š
 
 //ES6
 class Video extends React.Component {
@@ -173,10 +173,10 @@ Video.propTypes = {
     videoSrc: React.PropTypes.string.isRequired,
 };
 
-×¢Òâ: ¶ÔReact¿ª·¢Õß¶øÑÔ£¬static³ÉÔ±ÔÚIE10¼°Ö®Ç°°æ±¾²»ÄÜ±»¼Ì³Ğ£¬¶øÔÚIE11ºÍÆäËüä¯ÀÀÆ÷ÉÏ¿ÉÒÔ£¬ÕâÓĞÊ±ºò»á´øÀ´Ò»Ğ©ÎÊÌâ¡£React Native¿ª·¢Õß¿ÉÒÔ²»ÓÃµ£ĞÄÕâ¸öÎÊÌâ¡£
-³õÊ¼»¯state
+æ³¨æ„: å¯¹Reactå¼€å‘è€…è€Œè¨€ï¼Œstaticæˆå‘˜åœ¨IE10åŠä¹‹å‰ç‰ˆæœ¬ä¸èƒ½è¢«ç»§æ‰¿ï¼Œè€Œåœ¨IE11å’Œå…¶å®ƒæµè§ˆå™¨ä¸Šå¯ä»¥ï¼Œè¿™æœ‰æ—¶å€™ä¼šå¸¦æ¥ä¸€äº›é—®é¢˜ã€‚React Nativeå¼€å‘è€…å¯ä»¥ä¸ç”¨æ‹…å¿ƒè¿™ä¸ªé—®é¢˜ã€‚
+åˆå§‹åŒ–state
 
-ES5ÏÂÇé¿öÀàËÆ£¬
+ES5ä¸‹æƒ…å†µç±»ä¼¼ï¼Œ
 
 //ES5 
 var Video = React.createClass({
@@ -187,7 +187,7 @@ var Video = React.createClass({
     },
 })
 
-ES6ÏÂ£¬ÓĞÁ½ÖÖĞ´·¨£º
+ES6ä¸‹ï¼Œæœ‰ä¸¤ç§å†™æ³•ï¼š
 
 //ES6
 class Video extends React.Component {
@@ -196,7 +196,7 @@ class Video extends React.Component {
     }
 }
 
-²»¹ıÎÒÃÇÍÆ¼ö¸üÒ×Àí½âµÄÔÚ¹¹Ôìº¯ÊıÖĞ³õÊ¼»¯£¨ÕâÑùÄã»¹¿ÉÒÔ¸ù¾İĞèÒª×öÒ»Ğ©¼ÆËã£©£º
+ä¸è¿‡æˆ‘ä»¬æ¨èæ›´æ˜“ç†è§£çš„åœ¨æ„é€ å‡½æ•°ä¸­åˆå§‹åŒ–ï¼ˆè¿™æ ·ä½ è¿˜å¯ä»¥æ ¹æ®éœ€è¦åšä¸€äº›è®¡ç®—ï¼‰ï¼š
 
 //ES6
 class Video extends React.Component {
@@ -208,9 +208,9 @@ class Video extends React.Component {
     }
 }
 
-°Ñ·½·¨×÷Îª»Øµ÷Ìá¹©
+æŠŠæ–¹æ³•ä½œä¸ºå›è°ƒæä¾›
 
-ºÜ¶àÏ°¹ßÓÚES6µÄÓÃ»§·´¶ø²»Àí½âÔÚES5ÏÂ¿ÉÒÔÕâÃ´×ö£º
+å¾ˆå¤šä¹ æƒ¯äºES6çš„ç”¨æˆ·åè€Œä¸ç†è§£åœ¨ES5ä¸‹å¯ä»¥è¿™ä¹ˆåšï¼š
 
 //ES5
 var PostInfo = React.createClass({
@@ -227,9 +227,9 @@ var PostInfo = React.createClass({
     },
 });
 
-ÔÚES5ÏÂ£¬React.createClass»á°ÑËùÓĞµÄ·½·¨¶¼bindÒ»±é£¬ÕâÑù¿ÉÒÔÌá½»µ½ÈÎÒâµÄµØ·½×÷Îª»Øµ÷º¯Êı£¬¶øthis²»»á±ä»¯¡£µ«¹Ù·½ÏÖÔÚÖğ²½ÈÏÎªÕâ·´¶øÊÇ²»±ê×¼¡¢²»Ò×Àí½âµÄ¡£
+åœ¨ES5ä¸‹ï¼ŒReact.createClassä¼šæŠŠæ‰€æœ‰çš„æ–¹æ³•éƒ½bindä¸€éï¼Œè¿™æ ·å¯ä»¥æäº¤åˆ°ä»»æ„çš„åœ°æ–¹ä½œä¸ºå›è°ƒå‡½æ•°ï¼Œè€Œthisä¸ä¼šå˜åŒ–ã€‚ä½†å®˜æ–¹ç°åœ¨é€æ­¥è®¤ä¸ºè¿™åè€Œæ˜¯ä¸æ ‡å‡†ã€ä¸æ˜“ç†è§£çš„ã€‚
 
-ÔÚES6ÏÂ£¬ÄãĞèÒªÍ¨¹ıbindÀ´°ó¶¨thisÒıÓÃ£¬»òÕßÊ¹ÓÃ¼ıÍ·º¯Êı£¨Ëü»á°ó¶¨µ±Ç°scopeµÄthisÒıÓÃ£©À´µ÷ÓÃ
+åœ¨ES6ä¸‹ï¼Œä½ éœ€è¦é€šè¿‡bindæ¥ç»‘å®šthiså¼•ç”¨ï¼Œæˆ–è€…ä½¿ç”¨ç®­å¤´å‡½æ•°ï¼ˆå®ƒä¼šç»‘å®šå½“å‰scopeçš„thiså¼•ç”¨ï¼‰æ¥è°ƒç”¨
 
 //ES6
 class PostInfo extends React.Component
@@ -249,9 +249,9 @@ class PostInfo extends React.Component
     },
 }
 
-¼ıÍ·º¯ÊıÊµ¼ÊÉÏÊÇÔÚÕâÀï¶¨ÒåÁËÒ»¸öÁÙÊ±µÄº¯Êı£¬¼ıÍ·º¯ÊıµÄ¼ıÍ·=>Ö®Ç°ÊÇÒ»¸ö¿ÕÀ¨ºÅ¡¢µ¥¸öµÄ²ÎÊıÃû¡¢»òÓÃÀ¨ºÅÀ¨ÆğµÄ¶à¸ö²ÎÊıÃû£¬¶ø¼ıÍ·Ö®ºó¿ÉÒÔÊÇÒ»¸ö±í´ïÊ½£¨×÷Îªº¯ÊıµÄ·µ»ØÖµ£©£¬»òÕßÊÇÓÃ»¨À¨ºÅÀ¨ÆğµÄº¯ÊıÌå£¨ĞèÒª×ÔĞĞÍ¨¹ıreturnÀ´·µ»ØÖµ£¬·ñÔò·µ»ØµÄÊÇundefined£©¡£
+ç®­å¤´å‡½æ•°å®é™…ä¸Šæ˜¯åœ¨è¿™é‡Œå®šä¹‰äº†ä¸€ä¸ªä¸´æ—¶çš„å‡½æ•°ï¼Œç®­å¤´å‡½æ•°çš„ç®­å¤´=>ä¹‹å‰æ˜¯ä¸€ä¸ªç©ºæ‹¬å·ã€å•ä¸ªçš„å‚æ•°åã€æˆ–ç”¨æ‹¬å·æ‹¬èµ·çš„å¤šä¸ªå‚æ•°åï¼Œè€Œç®­å¤´ä¹‹åå¯ä»¥æ˜¯ä¸€ä¸ªè¡¨è¾¾å¼ï¼ˆä½œä¸ºå‡½æ•°çš„è¿”å›å€¼ï¼‰ï¼Œæˆ–è€…æ˜¯ç”¨èŠ±æ‹¬å·æ‹¬èµ·çš„å‡½æ•°ä½“ï¼ˆéœ€è¦è‡ªè¡Œé€šè¿‡returnæ¥è¿”å›å€¼ï¼Œå¦åˆ™è¿”å›çš„æ˜¯undefinedï¼‰ã€‚
 
-// ¼ıÍ·º¯ÊıµÄÀı×Ó
+// ç®­å¤´å‡½æ•°çš„ä¾‹å­
 ()=>1
 v=>v+1
 (a,b)=>a+b
@@ -265,9 +265,9 @@ e=>{
     return 1000/e;
 }
 
-ĞèÒª×¢ÒâµÄÊÇ£¬²»ÂÛÊÇbind»¹ÊÇ¼ıÍ·º¯Êı£¬Ã¿´Î±»Ö´ĞĞ¶¼·µ»ØµÄÊÇÒ»¸öĞÂµÄº¯ÊıÒıÓÃ£¬Òò´ËÈç¹ûÄã»¹ĞèÒªº¯ÊıµÄÒıÓÃÈ¥×öÒ»Ğ©±ğµÄÊÂÇé£¨Æ©ÈçĞ¶ÔØ¼àÌıÆ÷£©£¬ÄÇÃ´Äã±ØĞë×Ô¼º±£´æÕâ¸öÒıÓÃ
+éœ€è¦æ³¨æ„çš„æ˜¯ï¼Œä¸è®ºæ˜¯bindè¿˜æ˜¯ç®­å¤´å‡½æ•°ï¼Œæ¯æ¬¡è¢«æ‰§è¡Œéƒ½è¿”å›çš„æ˜¯ä¸€ä¸ªæ–°çš„å‡½æ•°å¼•ç”¨ï¼Œå› æ­¤å¦‚æœä½ è¿˜éœ€è¦å‡½æ•°çš„å¼•ç”¨å»åšä¸€äº›åˆ«çš„äº‹æƒ…ï¼ˆè­¬å¦‚å¸è½½ç›‘å¬å™¨ï¼‰ï¼Œé‚£ä¹ˆä½ å¿…é¡»è‡ªå·±ä¿å­˜è¿™ä¸ªå¼•ç”¨
 
-// ´íÎóµÄ×ö·¨
+// é”™è¯¯çš„åšæ³•
 class PauseMenu extends React.Component{
     componentWillMount(){
         AppStateIOS.addEventListener('change', this.onAppPaused.bind(this));
@@ -279,7 +279,7 @@ class PauseMenu extends React.Component{
     }
 }
 
-// ÕıÈ·µÄ×ö·¨
+// æ­£ç¡®çš„åšæ³•
 class PauseMenu extends React.Component{
     constructor(props){
         super(props);
@@ -295,9 +295,9 @@ class PauseMenu extends React.Component{
     }
 }
 
-´ÓÕâ¸öÌû×ÓÖĞÎÒÃÇ»¹Ñ§Ï°µ½Ò»ÖÖĞÂµÄ×ö·¨£º
+ä»è¿™ä¸ªå¸–å­ä¸­æˆ‘ä»¬è¿˜å­¦ä¹ åˆ°ä¸€ç§æ–°çš„åšæ³•ï¼š
 
-// ÕıÈ·µÄ×ö·¨
+// æ­£ç¡®çš„åšæ³•
 class PauseMenu extends React.Component{
     componentWillMount(){
         AppStateIOS.addEventListener('change', this.onAppPaused);
@@ -306,13 +306,13 @@ class PauseMenu extends React.Component{
         AppStateIOS.removeEventListener('change', this.onAppPaused);
     }
     onAppPaused = (event) => {
-        //°Ñ·½·¨Ö±½Ó×÷ÎªÒ»¸öarrow functionµÄÊôĞÔÀ´¶¨Òå£¬³õÊ¼»¯µÄÊ±ºò¾Í°ó¶¨ºÃÁËthisÖ¸Õë
+        //æŠŠæ–¹æ³•ç›´æ¥ä½œä¸ºä¸€ä¸ªarrow functionçš„å±æ€§æ¥å®šä¹‰ï¼Œåˆå§‹åŒ–çš„æ—¶å€™å°±ç»‘å®šå¥½äº†thisæŒ‡é’ˆ
     }
 }
 
 Mixins
 
-ÔÚES5ÏÂ£¬ÎÒÃÇ¾­³£Ê¹ÓÃmixinÀ´ÎªÎÒÃÇµÄÀàÌí¼ÓÒ»Ğ©ĞÂµÄ·½·¨£¬Æ©ÈçPureRenderMixin
+åœ¨ES5ä¸‹ï¼Œæˆ‘ä»¬ç»å¸¸ä½¿ç”¨mixinæ¥ä¸ºæˆ‘ä»¬çš„ç±»æ·»åŠ ä¸€äº›æ–°çš„æ–¹æ³•ï¼Œè­¬å¦‚PureRenderMixin
 
 var PureRenderMixin = require('react-addons-pure-render-mixin');
 React.createClass({
@@ -323,11 +323,11 @@ React.createClass({
   }
 });
 
-È»¶øÏÖÔÚ¹Ù·½ÒÑ¾­²»ÔÙ´òËãÔÚES6Àï¼ÌĞøÍÆĞĞMixin£¬ËûÃÇËµ£ºMixins Are Dead. Long Live Composition¡£
+ç„¶è€Œç°åœ¨å®˜æ–¹å·²ç»ä¸å†æ‰“ç®—åœ¨ES6é‡Œç»§ç»­æ¨è¡ŒMixinï¼Œä»–ä»¬è¯´ï¼šMixins Are Dead. Long Live Compositionã€‚
 
-¾¡¹ÜÈç¹ûÒª¼ÌĞøÊ¹ÓÃmixin£¬»¹ÊÇÓĞÒ»Ğ©µÚÈı·½µÄ·½°¸¿ÉÒÔÓÃ£¬Æ©ÈçÕâ¸ö·½°¸
+å°½ç®¡å¦‚æœè¦ç»§ç»­ä½¿ç”¨mixinï¼Œè¿˜æ˜¯æœ‰ä¸€äº›ç¬¬ä¸‰æ–¹çš„æ–¹æ¡ˆå¯ä»¥ç”¨ï¼Œè­¬å¦‚è¿™ä¸ªæ–¹æ¡ˆ
 
-²»¹ı¹Ù·½ÍÆ¼ö£¬¶ÔÓÚ¿â±àĞ´Õß¶øÑÔ£¬Ó¦µ±¾¡¿ì·ÅÆúMixinµÄ±àĞ´·½Ê½£¬ÉÏÎÄÖĞÌáµ½Sebastian Markb?geµÄÒ»¶Î´úÂëÍÆ¼öÁËÒ»ÖÖĞÂµÄ±àÂë·½Ê½£º
+ä¸è¿‡å®˜æ–¹æ¨èï¼Œå¯¹äºåº“ç¼–å†™è€…è€Œè¨€ï¼Œåº”å½“å°½å¿«æ”¾å¼ƒMixinçš„ç¼–å†™æ–¹å¼ï¼Œä¸Šæ–‡ä¸­æåˆ°Sebastian Markb?geçš„ä¸€æ®µä»£ç æ¨èäº†ä¸€ç§æ–°çš„ç¼–ç æ–¹å¼ï¼š
 
 //Enhance.js
 import { Component } from "React";
@@ -356,11 +356,11 @@ class MyComponent {
 
 export default Enhance(MyComponent); // Enhanced component
 
-ÓÃÒ»¸ö¡°ÔöÇ¿º¯Êı¡±£¬À´Ä³¸öÀàÔö¼ÓÒ»Ğ©·½·¨£¬²¢ÇÒ·µ»ØÒ»¸öĞÂÀà£¬ÕâÎŞÒÉÄÜÊµÏÖmixinËùÊµÏÖµÄ´ó²¿·ÖĞèÇó¡£
-ES6+´øÀ´µÄÆäËüºÃ´¦
-½â¹¹&ÊôĞÔÑÓÕ¹
+ç”¨ä¸€ä¸ªâ€œå¢å¼ºå‡½æ•°â€ï¼Œæ¥æŸä¸ªç±»å¢åŠ ä¸€äº›æ–¹æ³•ï¼Œå¹¶ä¸”è¿”å›ä¸€ä¸ªæ–°ç±»ï¼Œè¿™æ— ç–‘èƒ½å®ç°mixinæ‰€å®ç°çš„å¤§éƒ¨åˆ†éœ€æ±‚ã€‚
+ES6+å¸¦æ¥çš„å…¶å®ƒå¥½å¤„
+è§£æ„&å±æ€§å»¶å±•
 
-½áºÏÊ¹ÓÃES6+µÄ½â¹¹ºÍÊôĞÔÑÓÕ¹£¬ÎÒÃÇ¸øº¢×Ó´«µİÒ»ÅúÊôĞÔ¸üÎª·½±ãÁË¡£Õâ¸öÀı×Ó°ÑclassNameÒÔÍâµÄËùÓĞÊôĞÔ´«µİ¸ødiv±êÇ©£º
+ç»“åˆä½¿ç”¨ES6+çš„è§£æ„å’Œå±æ€§å»¶å±•ï¼Œæˆ‘ä»¬ç»™å­©å­ä¼ é€’ä¸€æ‰¹å±æ€§æ›´ä¸ºæ–¹ä¾¿äº†ã€‚è¿™ä¸ªä¾‹å­æŠŠclassNameä»¥å¤–çš„æ‰€æœ‰å±æ€§ä¼ é€’ç»™divæ ‡ç­¾ï¼š
 
 class AutoloadingPostsGrid extends React.Component {
     render() {
@@ -377,14 +377,14 @@ class AutoloadingPostsGrid extends React.Component {
     }
 }
 
-ÏÂÃæÕâÖÖĞ´·¨£¬ÔòÊÇ´«µİËùÓĞÊôĞÔµÄÍ¬Ê±£¬ÓÃ¸²¸ÇĞÂµÄclassNameÖµ£º
+ä¸‹é¢è¿™ç§å†™æ³•ï¼Œåˆ™æ˜¯ä¼ é€’æ‰€æœ‰å±æ€§çš„åŒæ—¶ï¼Œç”¨è¦†ç›–æ–°çš„classNameå€¼ï¼š
 
 <div {...this.props} className="override">
-    ¡­
+    â€¦
 </div>
 
-Õâ¸öÀı×ÓÔòÏà·´£¬Èç¹ûÊôĞÔÖĞÃ»ÓĞ°üº¬className£¬ÔòÌá¹©Ä¬ÈÏµÄÖµ£¬¶øÈç¹ûÊôĞÔÖĞÒÑ¾­°üº¬ÁË£¬ÔòÊ¹ÓÃÊôĞÔÖĞµÄÖµ
+è¿™ä¸ªä¾‹å­åˆ™ç›¸åï¼Œå¦‚æœå±æ€§ä¸­æ²¡æœ‰åŒ…å«classNameï¼Œåˆ™æä¾›é»˜è®¤çš„å€¼ï¼Œè€Œå¦‚æœå±æ€§ä¸­å·²ç»åŒ…å«äº†ï¼Œåˆ™ä½¿ç”¨å±æ€§ä¸­çš„å€¼
 
 <div className="base" {...this.props}>
-    ¡­
+    â€¦
 </div>
